@@ -1,18 +1,19 @@
 #include "main.h"
 /**
- *
- *_putchar- entry point
- *
+ *main- entry point
+ *return: 0
  */
-int _putchar(char c)
+int main(void)
 {
-	char w;
+	int a;
+	char w[] = "_putchar";
 
-	w = '_putchar';
-	
-	w = 0;
-	while (w <= 10)
-		_putchar(w);
+	a = 0;
+	while (a <= 7)
+	{
+		_putchar(w[a]);
+		a++;
+	}
 		_putchar('\n');
 	return 0;
 }
