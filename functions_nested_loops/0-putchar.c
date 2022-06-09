@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *main - entry point
- *return: 0
+ * main - print the word _putchar
+ * Return: 0
  */
+
 int main(void)
 {
 	int a;
