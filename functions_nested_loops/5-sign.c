@@ -2,7 +2,7 @@
 /**
  * print_sign - checks for a alphabetic order
  *@n: character to be checked
- * Return: 1 if n is greater than cero, 0 if returns o, and -1 if its less than cero.
+ * Return: 1 , 0 or -1
  */
 int print_sign(int n)
 {
