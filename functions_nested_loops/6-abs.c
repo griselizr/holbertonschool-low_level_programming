@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * int_abs - absolute variable of an integer
- * @num - parameter
+ * _abs - absolute variable of an integer
+ * @num: parameter
  * Return: 0 or 1
  */
 
