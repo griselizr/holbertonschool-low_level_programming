@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - check the code
- * @int:parameter
+ * @n:parameter
  * Return: Always 0.
  */
 int print_last_digit(int n)
