@@ -2,7 +2,6 @@
 #include <stdio.h>
 /**
  * main -entry point
- *
  * Return: the word fizzbuzz and or fizz or buzz
  */
 int main(void)
