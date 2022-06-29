@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
- *
  * main - print file
  *
  * Return: void
