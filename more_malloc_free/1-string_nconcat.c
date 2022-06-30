@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (lk2 > n)
 		lk2 = n;
-	t = malloc((sizeof(char) * (lk1 + lk2) + 4));
+	t = malloc((sizeof(char) * (lk1 + lk2) + 2));
 		if (t == NULL)
 		return (NULL);
 
