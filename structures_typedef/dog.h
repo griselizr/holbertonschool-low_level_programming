@@ -1,22 +1,20 @@
-#ifndef _DOG_H_
-#define _DOG_H_
+#ifndef DOG_H_
+#define DOG_H_
 /**
- * struct dogs - dog display
- * @name: name
- * @age: age
+ * struct dog - dog display
+ * @name: dog
+ * @age: time
  * @owner: dog owner
  *
- * Description: Longer description
+ * Description: who are these pets?
  */
 
-struct dog
+typedef struct dog
 {
 	char *name;
-	float *age;
+	float age;
 	char *owner;
-};
-
-typedef struct dog dog_t;
+} dog_t;
 
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
