@@ -12,11 +12,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *dog;
 	unsigned int i, cpy, s;
 
-	if (name == NULL && owner == NULL)
+	if (name == NULL || owner == NULL)
 		return (NULL);
-
 	dog = malloc(sizeof(dog_t));
-
 	if (dog == NULL)
 		return (NULL);
 
@@ -38,6 +36,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	(dog)->age = age;
 	for (cpy = 0; owner[cpy]; cpy++)
 		;
+	cpy++;
 	(dog)->owner = malloc(sizeof(char) * cpy);
 
 	if ((dog)->owner == NULL)
