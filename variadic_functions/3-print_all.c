@@ -28,7 +28,6 @@ void print_all(const char * const format, ...)
 		break;
 		printf("%f", va_arg(var, double));
 		break;
-	
 	all = va_arg(var, char*);
 	if (format[ev] != '\0')
 	{
