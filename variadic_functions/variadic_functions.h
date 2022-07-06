@@ -10,8 +10,8 @@
 
 typedef struct var
 {
-  char *t;
-  void(*f)(va_list);
+char *t;
+void (*f)(va_list);
 } var_t;
 
 int _putchar(char);
