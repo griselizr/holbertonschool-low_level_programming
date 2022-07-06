@@ -10,22 +10,22 @@
 int main(int argc, char *argv[])
 {
 	int c, d, g;
-	int (*ps)(int, int);
+	int (*l_func)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	ps = get_op_func(argv[2]);
-	if (ps == NULL)
+	l_func = get_op_func(argv[2]);
+	if (l_func == NULL)
 	{
 		printf("Error\n");
 				exit(99);
 	}
 	c = atoi(argv[1]);
 	d = atoi(argv[3]);
-	g = ps(c, d);
+	g = l_func(c, d);
 	printf("%d\n", g);
 		return (0);
 }
