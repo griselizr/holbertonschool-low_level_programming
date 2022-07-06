@@ -9,6 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
+	int c, d, g;
 	int (*ps)(int, int);
 
 	if (argc != 4)
@@ -22,7 +23,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 				exit(99);
 	}
-	printf("%d\n", ps(atoi(argv[1]), atoi(argv[3])));
+	c = atoi(argv[1]);
+	d = atoi(argv[3]);
+	g = ps(c, d);
+	printf("%d\n", g);
 		return (0);
 }
 
