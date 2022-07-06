@@ -17,10 +17,10 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	ps = get_op_func(argv[2]);
-	if (!ps)
+	if (ps == NULL)
 	{
 		printf("Error\n");
-				exit(98);
+				exit(99);
 	}
 	printf("%d\n", ps(atoi(argv[1]), atoi(argv[3])));
 		return (0);
