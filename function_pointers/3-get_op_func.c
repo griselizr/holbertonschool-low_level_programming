@@ -28,7 +28,7 @@ op_t ops[] = {
 		direct++;
 	}
 }
-	return (0);
+	return (NULL);
 }
 
 
