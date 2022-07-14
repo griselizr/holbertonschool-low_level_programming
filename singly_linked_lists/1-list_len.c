@@ -9,10 +9,10 @@
 size_t list_len(const list_t *h)
 {
 	const list_t *ls;
-	unsigned in idx;
+	unsigned int idx;
 
 	ls = h;
 	for (idx = 0; ls; idx++)
-		ls =lis->next;
+		ls = ls->next;
 	return (idx);
 }
