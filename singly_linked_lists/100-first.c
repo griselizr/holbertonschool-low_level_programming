@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void__attributte__ ((constructor)) winner(void);
+void __attribute__ ((constructor)) winner(void);
 
 /**
 * winner- prints a string
