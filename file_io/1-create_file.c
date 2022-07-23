@@ -11,7 +11,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int file, p = 0, mk;
 
-	if (!filename)
+	if (filename == NULL)
 	{
 		return (-1);
 	}
@@ -22,11 +22,11 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	if (!text_content)
+	if (text_content == NULL)
 	{
 		text_content = " ";
 	}
-	while (text_content[p] != '0')
+	while (text_content[p] != '\0')
 		p++;
 
 	mk = write(file, text_content, p);
