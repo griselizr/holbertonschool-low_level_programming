@@ -7,9 +7,9 @@
 
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned int i;
-	unsigned int brace = 0;
-	hash_node_t *tmp = NULL;
+	unsigned long int i;
+	unsigned long int brace = 0;
+	hash_node_t *tmp;
 
 	if (ht == NULL || ht->array == NULL)
 		return;
@@ -22,10 +22,10 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			if (brace == 1)
 				printf(", ");
-				printf("'%s': '%s'", tmp->key, tmp->value);
-				brace = 1;
-				tmp = tmp->next;
-			}
+			printf("'%s': '%s'", tmp->key, tmp->value);
+			brace = 1;
+			tmp = tmp->next;
+		}
 	}
 	printf("}\n");
 }
