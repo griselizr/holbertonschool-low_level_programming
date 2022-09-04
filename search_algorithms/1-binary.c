@@ -37,11 +37,11 @@ int binary_search(int *array, size_t size, int value)
 		}
 		else if (value < array[middle])
 		{
-			max = array[middle - 1];
+			max = middle - 1;
 		}
 		else if (value > array[middle])
 		{
-			min = array[middle + 1];
+			min = middle + 1;
 		}
 	}
 	return (-1);
